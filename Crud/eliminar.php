@@ -13,6 +13,6 @@ if (isset($_GET["id"])) {
     $connection->query($sql);
 }
 
-header("location: /myshop/vistas/administrador/index.php");
+header("location: /Crud/index.php");
 exit;
 ?>

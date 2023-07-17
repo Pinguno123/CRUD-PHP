@@ -15,7 +15,7 @@ $successMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (!isset($_GET['id'])) {
-        header("location: /myshop/index.php");
+        header("location: /Crud/index.php");
         exit;
     }
 
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $row = $resultado->fetch_assoc();
 
     if (!$row) {
-        header("location: /myshop/vistas/administrador/index.php");
+        header("location: /Crud/index.php");
         exit;
     }
 
