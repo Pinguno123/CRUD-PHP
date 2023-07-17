@@ -4,7 +4,7 @@ if (isset($_GET["id"])) {
 
     $server = "localhost";
     $user = "root";
-    $pass = "root";
+    $pass = "";
     $database = "myshop";
 
     $connection = new mysqli($server, $user, $pass, $database);

@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $user = "root";
-$pass = "root";
+$pass = "";
 $database = "myshop";
 
 $connection = new mysqli($server, $user, $pass, $database);
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $successMessage = "Nuevo cliente agregado correctamente";
 
-        header("location: /myshop/vistas/administrador/index.php");
+        header("location: /Crud/index.php");
         exit;
 
     } while (false);
